@@ -1,16 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tboonsan <tboonsan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/03 15:56:35 by tboonsan          #+#    #+#             */
-/*   Updated: 2022/09/06 21:05:09 by tboonsan         ###   ########.fr       */
+/*   Created: 2022/09/06 20:55:05 by tboonsan          #+#    #+#             */
+/*   Updated: 2022/09/06 20:58:47 by tboonsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalpha(int a);
-int ft_isdigit(int a);
-int ft_isalnum(int a);
-int ft_isascii(int a);
+int	ft_isascii(int a)
+{
+	if (a >= 0 && a <= 127)
+		return (1);
+	return (0);
+}
