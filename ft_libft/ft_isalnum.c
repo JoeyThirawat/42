@@ -1,18 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tboonsan <tboonsan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/03 15:53:41 by tboonsan          #+#    #+#             */
-/*   Updated: 2022/09/03 17:52:01 by tboonsan         ###   ########.fr       */
+/*   Created: 2022/09/03 15:53:56 by tboonsan          #+#    #+#             */
+/*   Updated: 2022/09/03 18:07:24 by tboonsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int a)
+#include "libft.h"
+
+int	ft_isalnum(int a)
 {
-	if ((a >= 65 && a <= 90) || (a >= 97 && a <= 122))
+	if (ft_isalpha(a) || ft_isdigit(a))
 		return (1);
 	return (0);
 }
