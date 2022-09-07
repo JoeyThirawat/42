@@ -6,22 +6,25 @@
 /*   By: tboonsan <tboonsan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/06 21:24:54 by tboonsan          #+#    #+#             */
-/*   Updated: 2022/09/07 19:47:39 by tboonsan         ###   ########.fr       */
+/*   Updated: 2022/09/07 19:59:53 by tboonsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *inStr)
+int	ft_strlen(char *in_str)
 {
-	int count = 0;
+	char note_str;
+
+	int count;
 	int i;
-	char noteStr;
-    
-    noteStr = inStr[0];
-    
-    while (noteStr != '\0')
+
+	count = 0;
+	i = 0;
+	note_str = in_str[0];
+
+	while (noteStr != '\0')
     {
         count++;
-        noteStr = inStr[++i];
+        note_str = in_str[++i];
     }
     
     return count;
