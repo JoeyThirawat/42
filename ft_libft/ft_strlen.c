@@ -6,17 +6,23 @@
 /*   By: tboonsan <tboonsan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/06 21:24:54 by tboonsan          #+#    #+#             */
-/*   Updated: 2022/09/06 21:28:43 by tboonsan         ###   ########.fr       */
+/*   Updated: 2022/09/07 19:39:49 by tboonsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int strlen(char * s) {
-      int i = 0, sum = 0;
-      char c = s[0];
-
-      while(c != '\0') {
-            sum++;
-            c = s[++i];
-      }
-      return sum;
+int ft_strlen(char *inStr)
+{
+    int count = 0;
+    int i = 0;
+    char noteStr;
+    
+    noteStr = inStr[0];
+    
+    while (noteStr != '\0')
+    {
+        count++;
+        noteStr = inStr[++i];
+    }
+    
+    return count;
 }
