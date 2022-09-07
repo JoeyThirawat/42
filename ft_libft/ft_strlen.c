@@ -6,15 +6,15 @@
 /*   By: tboonsan <tboonsan@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/06 21:24:54 by tboonsan          #+#    #+#             */
-/*   Updated: 2022/09/07 19:39:49 by tboonsan         ###   ########.fr       */
+/*   Updated: 2022/09/07 19:47:39 by tboonsan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *inStr)
+int	ft_strlen(char *inStr)
 {
-    int count = 0;
-    int i = 0;
-    char noteStr;
+	int count = 0;
+	int i;
+	char noteStr;
     
     noteStr = inStr[0];
     
